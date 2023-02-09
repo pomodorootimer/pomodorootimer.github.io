@@ -45,6 +45,25 @@ reset.addEventListener("click", function () {
   clearInterval(startTimer);
 });
 
+// White Mode
+var checkbox = document.querySelector("input[name=theme]");
+
+// Local Storage
+const checkboxColorMode = JSON.parse(localStorage.getItem("color-mode"));
+
+if (checkboxColorMode) {
+  checkbox.checked = checkboxColorMode;
+  document.documentElement.setAttribute("data-theme", "light");
+}
+
+checkbox.addEventListener("change", ({ target }) => {
+  target.checked
+    ? document.documentElement.setAttribute("data-theme", "light")
+    : document.documentElement.setAttribute("data-theme", "dark");
+
+  localStorage.setItem("color-mode", target.checked);
+});
+
 // Função pra decrementar o tempo
 function timer() {
   // POMODORO TIMER
