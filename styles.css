@@ -63,6 +63,19 @@ body {
   border: 5px solid var(--color-geral);
 }
 
+#add {
+  height: 60px;
+  width: 60px;
+  border-radius: 0%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-geral);
+  border: 5px solid var(--color-geral);
+  cursor: pointer;
+}
+
 #pause {
   height: 100px;
   width: 100px;
@@ -186,6 +199,13 @@ html.transition *:after {
     border-radius: 50%;
     margin-left: 20px;
   }
+
+  #add {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -216,6 +236,13 @@ html.transition *:after {
     width: 60px;
     border-radius: 50%;
     margin-left: 20px;
+  }
+
+  #add {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
   }
 }
 
@@ -248,4 +275,75 @@ html.transition *:after {
     border-radius: 50%;
     margin-left: 20px;
   }
+
+  #add {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+}
+
+
+
+
+/* tabela de tasks*/
+
+th{
+  text-align: center;
+
+  color: var(--color-geral);
+  
+}
+
+#aa{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  
+
+}
+
+#taskList{
+  border: 3px solid var(--color-geral);
+  margin-top: 10px;
+  width: 300px;
+  text-align: center;
+  color: var(--color-geral);
+}
+
+
+
+#submit-response{
+  cursor: pointer;
+}
+
+#cancel-add-task{
+  cursor: pointer;
+}
+
+#logs{
+  color:  var(--color-geral);
+  margin-left: 40px;
+}
+
+.container1{
+  height: 100px;
+  overflow-y: scroll;
+}
+
+
+
+input i{
+  margin-right: 2220px;
+}
+
+#taskList i{
+  margin-left: 10px;
+  
+}
+
+li{
+  margin: 0  20px 0px 0px;
+  list-style-type: none;
 }
